@@ -7,6 +7,10 @@ module.exports = class Header extends Component {
     this.local = state.components[id] = { }
   }
 
+  update () {
+    return false
+  }
+
   createElement () {
     return html`
       <div className="header">

@@ -16,7 +16,8 @@
     "choo-service-worker": "^3.0.0",
     "sheetify": "^7.4.0",
     "tachyons": "^4.11.1",
-    "marked": "0.7.0"
+    "marked": "0.7.0",
+    "highlight.js": "9.6.0"
   },
   "devDependencies": {
     "bankai": "^9.15.1",

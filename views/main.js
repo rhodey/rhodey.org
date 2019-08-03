@@ -6,6 +6,18 @@ var Header    = require('./header.js')
 var blogidx   = require('../blog-index.js')
 
 var TITLE = 'choo.rhodey.org - main'
+var EMOTICONS = [
+  "o_o",     "0_o",        "o_0",
+  "(>_<)",   "<(>_<)",     "(>_<)>",
+  "(^_^)",   "<(^_^)",     "(^_^)>",
+  "(*_*)",   "(;*_*)",     "(*_*;)",
+  "(＠_＠)", "(;＠_＠)",   "(＠_＠;)",
+  "(T_T)",   "(T-T)",      "(Ｔ▽Ｔ)",
+  "(≧∇≦)",   "\\(≧∇≦)",    "(≧∇≦)/",
+  "(◕ヮ◕)",  "\\(◕ヮ◕\\)", "(/◕ヮ◕)/",
+  "(◠‿◠)",   "(✿◠‿◠)",     "(◠‿◠✿)",
+  "（´ー｀）", "（´ー｀）┌", "ヽ（´ー｀）┌"
+];
 
 module.exports = view
 
@@ -15,14 +27,19 @@ class BlogListItem extends Component {
     this.local = state.components[id] = { }
   }
 
-  update (key) {
-    return key !== this.local.key
+  update (key, eidx) {
+    return key !== this.local.key ||
+      eidx !== this.local.eidx
   }
 
-  createElement (key) {
+  createElement (key, eidx) {
     this.local.key = key
+    this.local.eidx = eidx
+
+    let emoticon = EMOTICONS[eidx % EMOTICONS.length]
     let entry = blogidx[key]
     let summary = marked(entry.summary)
+
     return html`
       <div class="blogListItem">
         <div class="row">
@@ -32,7 +49,7 @@ class BlogListItem extends Component {
                 ${entry.date}
               </span>
               <span class="blogEntryEmoticon row">
-                :D
+                ${emoticon}
               </span>
             </p></div>
           </div>
@@ -56,7 +73,7 @@ class BlogListItem extends Component {
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
   let items = Object.keys(blogidx)
-    .map((key) => state.cache(BlogListItem, key).render(key))
+    .map((key, idx) => state.cache(BlogListItem, key).render(key, state.emoticount - idx))
 
   return html`
     <body class="app">

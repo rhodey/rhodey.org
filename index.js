@@ -11,7 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-service-worker')())
 }
 
-app.use(require('./stores/clicks'))
+app.use(require('./store'))
 
 app.route('/', require('./views/main'))
 app.route('/blog/:entry', require('./views/entry'))
