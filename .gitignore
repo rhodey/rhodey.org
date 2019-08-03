@@ -1,3 +1,6 @@
+blog-index.js
+
+package-lock.json
 node_modules/
 .nyc_output/
 coverage/
@@ -5,3 +8,4 @@ dist/
 tmp/
 npm-debug.log*
 .DS_Store
+*\.swp
