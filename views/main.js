@@ -42,7 +42,7 @@ class BlogListItem extends Component {
               <span class="blogEntryEmoticon row">
                 :D
               </span>
-            </div>
+            </p></div>
           </div>
           <div class="col-xs-9">
             <div class="blogEntryGist">

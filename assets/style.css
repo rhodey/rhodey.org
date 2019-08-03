@@ -3,15 +3,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container {
-  width: 100%;
-  margin: 0px;
-  padding: 12px 12px 18px 12px;
-}
-
 .app {
   width: 80%;
   margin: 0 auto;
+  padding: 12px 12px 18px 12px;
 }
 
 h1 {

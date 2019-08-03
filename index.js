@@ -3,6 +3,7 @@ var choo = require('choo')
 
 css('tachyons')
 css('./assets/style.css')
+css('./assets/bootstrap-3.3.6.css')
 
 var app = choo()
 if (process.env.NODE_ENV !== 'production') {
