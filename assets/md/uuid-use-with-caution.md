@@ -40,13 +40,13 @@ Because of this HFT firms go to extreme measures to protect the secrecy of both 
 ## Vulnerability Reporting
 For awhile I just sat on this vulnerability and had fun trying to pick apart the strategies of various bots trading on GDAX, then I came across this job description for [Software Engineer - Exchange](https://www.coinbase.com/careers/262509) posted by Coinbase themselves! I expected that working on the GDAX trading platform would be really interesting and that pointing out this UUID problem would help my application so I sent in my resume and followed up with a report to their [Bug Bountry](https://www.coinbase.com/whitehat):
 
-![](/img/gdax/gdax-report.png)
+![](/assets/img/gdax/gdax-report.png)
 
 ## Bug Bounty Response
 The report was quickly closed with status `Not Applicable` and the following response:
 
-![](/img/gdax/gdax-response.png)
+![](/assets/img/gdax/gdax-response.png)
 
 OK, sure, it's not *[RCE](https://en.wikipedia.org/wiki/Arbitrary_code_execution)* or *[SQLi](https://en.wikipedia.org/wiki/SQL_injection)* but GDAX should be concerned about protecting the anonymity of its traders and a simple note in the API doc could do a lot to help this. I definitely had no expectation for a reward in this case but to not even say "thanks", especially when someone reveals they're hoping to work with you, is **(t-_-)t** *highly unprofessional* **t(-_-t)**
 
-![](/img/gdax/gdax-lol.png)
+![](/assets/img/gdax/gdax-lol.png)

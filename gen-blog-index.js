@@ -54,7 +54,7 @@ function writeToIndex(headers) {
 }
 
 
-fs.readdir('assets/', function(err, files) {
+fs.readdir('assets/md/', function(err, files) {
   var headers = [];
 
   if (err) {
@@ -62,7 +62,7 @@ fs.readdir('assets/', function(err, files) {
     process.exit(1);
   } else {
     files.filter(function(file) { return file.endsWith('.md'); }).forEach(function(file) {
-      headers.push(headerFor("assets/" + file));
+      headers.push(headerFor("assets/md/" + file));
     });
     Promise.all(headers).then(function(vals) {
       writeToIndex(vals);

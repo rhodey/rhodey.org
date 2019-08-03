@@ -44,7 +44,7 @@ As a result of the alphabetical sort the DOT file's syntax became slightly corru
 $ dot -Kfdp -Tpng {DOT-filename} > {PNG-filename}
 ```
 
-![the result](/img/other/stratfor-graph.jpg)
+![the result](/assets/img/other/stratfor-graph.jpg)
 
 When I make the time I plan to color the edges of the graph based off of relationship strength judged by email count, attachments, and a few other things. The Ada code I whipped up for this is pretty bare-bones with no attempt to break anything out to separate packages, however it is thoroughly commented in case anyone had some new ideas of
 their own.
