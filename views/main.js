@@ -1,7 +1,9 @@
-var html = require('choo/html')
+var html      = require('choo/html')
+var raw       = require('choo/html/raw')
 var Component = require('choo/component')
-var Header = require('./header.js')
-var blogidx = require('../blog-index.js')
+var marked    = require('marked')
+var Header    = require('./header.js')
+var blogidx   = require('../blog-index.js')
 
 var TITLE = 'choo.rhodey.org - main'
 
@@ -17,20 +19,10 @@ class BlogListItem extends Component {
     return key !== this.local.key
   }
 
-    /*<div className="blogEntryGist">
-        <h2 className="row">
-          <Link to={"/blog/" + this.props.entry.path}>{this.props.entry.title}</Link>
-        </h2>
-        <div className="row">
-          <p className="col-xs-12">
-            <span dangerouslySetInnerHTML={this.getSummaryHtml()}/>
-          </p>
-        </div>
-      </div>
-      */
   createElement (key) {
     this.local.key = key
     let entry = blogidx[key]
+    let summary = marked(entry.summary)
     return html`
       <div class="blogListItem">
         <div class="row">
@@ -50,9 +42,9 @@ class BlogListItem extends Component {
                 <a href=${"/blog/" + key}>${entry.title}</a>
               </h2>
               <div class="row">
-                <p class="col-xs-12">
-                  ${entry.summary}
-                </p>
+                <div class="col-xs-12">
+                  ${raw(summary)}
+                </div>
               </div>
             </div>
           </div>

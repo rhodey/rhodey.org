@@ -1,7 +1,6 @@
 var css = require('sheetify')
 var choo = require('choo')
 
-css('tachyons')
 css('./assets/style.css')
 css('./assets/bootstrap-3.3.6.css')
 
