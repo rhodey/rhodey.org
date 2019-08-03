@@ -29,8 +29,8 @@ class BlogEntry extends Component {
 
     if (!content) {
       return html`
-        <div class="blogEntry">
-          ${key}
+        <div class="blogLoading row">
+          <img class="col-xs-12" src="/assets/img/loading.gif"></img>
         </div>`
     }
 
