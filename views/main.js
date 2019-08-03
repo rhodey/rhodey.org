@@ -17,7 +17,7 @@ var EMOTICONS = [
   "(◕ヮ◕)",  "\\(◕ヮ◕\\)", "(/◕ヮ◕)/",
   "(◠‿◠)",   "(✿◠‿◠)",     "(◠‿◠✿)",
   "（´ー｀）", "（´ー｀）┌", "ヽ（´ー｀）┌"
-];
+]
 
 module.exports = view
 
@@ -73,7 +73,7 @@ class BlogListItem extends Component {
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
   let items = Object.keys(blogidx)
-    .map((key, idx) => state.cache(BlogListItem, key).render(key, state.emoticount - idx))
+    .map((key, idx) => state.cache(BlogListItem, 'item'+key).render(key, state.emoticount - idx))
 
   return html`
     <body class="app">

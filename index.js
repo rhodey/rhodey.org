@@ -3,6 +3,7 @@ var choo = require('choo')
 
 css('./assets/style.css')
 css('./assets/bootstrap-3.3.6.css')
+css('./assets/highlightjs-9.6.0.css')
 
 var app = choo()
 if (process.env.NODE_ENV !== 'production') {
