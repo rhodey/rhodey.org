@@ -5,7 +5,7 @@ var marked    = require('marked')
 var Header    = require('./header.js')
 var blogidx   = require('../blog-index.js')
 
-var TITLE = 'choo.rhodey.org - main'
+var TITLE = 'rhodey.org'
 var EMOTICONS = [
   "o_o",     "0_o",        "o_0",
   "(>_<)",   "<(>_<)",     "(>_<)>",

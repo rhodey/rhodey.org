@@ -6,7 +6,7 @@ var highlight = require('highlight.js')
 var Header    = require('./header.js')
 var blogidx   = require('../blog-index.js')
 
-var TITLE = 'choo.rhodey.org - entry'
+var TITLE = 'loading...'
 
 module.exports = view
 marked.setOptions({highlight: function (code) { return highlight.highlightAuto(code).value }})
@@ -50,14 +50,21 @@ class BlogEntry extends Component {
 }
 
 function view (state, emit) {
-  if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
   let key = state.params.entry
   let content = state.fetch[key]
+  let title = 'loading...'
 
   if (!blogidx[key]) {
     emit(state.events.REPLACESTATE, '/404')
   } else if (!content) {
+    title = blogidx[key].title
     emit('fetch', key)
+  } else {
+    title = blogidx[key].title
+  }
+
+  if (state.title !== title) {
+    emit(state.events.DOMTITLECHANGE, title)
   }
 
   return html`

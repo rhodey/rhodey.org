@@ -13,7 +13,7 @@ $ npm run build
 $ docker run --name rhodey.org \
     -v /host/path/rhodey.org/nginx.conf:/etc/nginx/nginx.conf:ro \
     -v /etc/letsencrypt:/etc/letsencrypt:ro \
-    -v /host/path/rhodey.org:/usr/share/nginx/html:ro \
+    -v /host/path/rhodey.org/dist:/usr/share/nginx/html:ro \
     -p 80:80 \
     -p 443:443 \
     --restart unless-stopped \
