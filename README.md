@@ -5,7 +5,7 @@ personal blog.
 ```
 $ npm install
 $ npm run index
-$ npm run bundle
+$ npm run build
 ```
 
 ## Deploy
