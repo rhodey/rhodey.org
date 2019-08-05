@@ -1,11 +1,21 @@
 # choo.rhodey.org
 personal blog.
 
-## Commands
-Command                | Description                                      |
------------------------|--------------------------------------------------|
-`$ npm start`          | Start the development server
-`$ npm test`           | Lint, validate deps & run tests
-`$ npm run build`      | Compile all files into `dist/`
-`$ npm run create`     | Generate a scaffold file
-`$ npm run inspect`    | Inspect the bundle's dependencies
+## Build
+```
+$ npm install
+$ npm run index
+$ npm run bundle
+```
+
+## Deploy
+```
+$ docker run --name rhodey.org \
+    -v /host/path/rhodey.org/nginx.conf:/etc/nginx/nginx.conf:ro \
+    -v /etc/letsencrypt:/etc/letsencrypt:ro \
+    -v /host/path/rhodey.org:/usr/share/nginx/html:ro \
+    -p 80:80 \
+    -p 443:443 \
+    --restart unless-stopped \
+    -d nginx
+```
