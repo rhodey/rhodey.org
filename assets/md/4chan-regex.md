@@ -2,7 +2,7 @@
 4chan-regex
 January 1, 2007
 4chan Regex Practice
-**Many, many years ago** I decided that I needed some regex practice, and background aside I'd like to think that any survey is a survey worth sharing. What follows is a quick survey of the sex and age of 4chan commenters using exclusively shell commands. This is the bottom of the barrell my friends.
+Many, many years ago I decided that I needed some regex practice, and background aside I'd like to think that any survey is a survey worth sharing. What follows is a quick survey of the sex and age of 4chan commenters using exclusively shell commands. This is the bottom of the barrell my friends.
 <!--no banner-->
 !!!
 
