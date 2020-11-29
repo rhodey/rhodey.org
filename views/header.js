@@ -16,8 +16,8 @@ module.exports = class Header extends Component {
       <div className="header">
         <h1><a href="/">#rhodey.org</a>
           <span className="headerLinks">
-            <a href="https://github.com/rhodey"> github</a>
             <a href="https://rhodeyorbits.bandcamp.com/releases"> music</a>
+            <a href="https://github.com/rhodey"> github</a>
             <a href="mailto:rhodey@anhonesteffort.org"> email</a>
           </span>
         </h1>
