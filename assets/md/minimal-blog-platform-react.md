@@ -2,12 +2,12 @@
 minimal-blog-platform-react
 September 19, 2016
 Building A Minimal Blogging Platform with React.js
-Everyone does blogging differently, this site is my second shot at coding myself a blogging platform. This is largely an exercise in getting more familiar with React.
+Everyone does blogging differently, this site is my second shot at coding myself a blogging platform (update: did it again, this time [using choo.js](https://github.com/rhodey/rhodey.org)). This is largely an exercise in getting more familiar with React.
 <!--no banner-->
 !!!
 
 
-Everyone does blogging differently, this site is my second shot at coding myself a blogging platform. This is largely an exercise in getting more familiar with React. Last time I attempted this I used the Java HTTP Server framework [Dropwizard](http://www.dropwizard.io/1.0.0/docs/) for API & static assets, [PostgreSQL](https://www.postgresql.org/) for content & metadata storage, [FreeMarker](http://freemarker.org/) as a server-side templating engine, and some obscure JavaScript Markdown parser. In retrospect the first attempt was, ***errrrrrr...*** pretty bad; sometimes my appreciation of *Dropwizard* shows in the wrong ways. This second attempt feels much more appropriate, what do ya think?
+Everyone does blogging differently, this site is my second shot at coding myself a blogging platform (update: did it again, this time [using choo.js](https://github.com/rhodey/rhodey.org)). This is largely an exercise in getting more familiar with React. Last time I attempted this I used the Java HTTP Server framework [Dropwizard](http://www.dropwizard.io/1.0.0/docs/) for API & static assets, [PostgreSQL](https://www.postgresql.org/) for content & metadata storage, [FreeMarker](http://freemarker.org/) as a server-side templating engine, and some obscure JavaScript Markdown parser. In retrospect the first attempt was, ***errrrrrr...*** pretty bad; sometimes my appreciation of *Dropwizard* shows in the wrong ways. This second attempt feels much more appropriate, what do ya think?
 
 + `100%` Static Assets
 + [Nginx](https://nginx.org/) HTTP Server
