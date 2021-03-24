@@ -153,7 +153,7 @@ ReactDOM.render((
 ```
 
 ### BlogList
-`BlogList` can be found in [js/blog-list.js](https://github.com/rhodey/react.rhodey.org/blob/ed7b1af8feab645622639cf6bae76157686c9c88/js/blog-list.js), its core functionality is to render the content index I explained previously in the *"Static Assets"* section. The blog entry summaries in the content index are Markdown, notice how they're rendered in `BlogEntryGist` using [Marked](https://www.npmjs.com/package/marked). I've stripped out the undeniably beautiful [emoticon](https://en.wikipedia.org/wiki/List_of_emoticons) code, CSS transition animation, and fancy AJAX prefetching to keep the focus on the core blogging platform design. *UPDATE: the fancy AJAX cache prefetch backfired on me like deep down I always knew it would.*
+`BlogList` can be found in [js/blog-list.js](https://github.com/rhodey/react.rhodey.org/blob/ed7b1af8feab645622639cf6bae76157686c9c88/js/blog-list.js), its core functionality is to render the content index I explained previously in the *"Static Assets"* section. The blog entry summaries in the content index are Markdown, notice how they're rendered in `BlogEntryGist` using [Marked](https://www.npmjs.com/package/marked). I've stripped out the undeniably beautiful [emoticon](https://en.wikipedia.org/wiki/List_of_emoticons) code, CSS transition animation, and fancy AJAX prefetching to keep the focus on the core blogging platform design.
 
 ```JavaScript
 var BlogEntryMeta = React.createClass({
