@@ -15,7 +15,7 @@ Now, by this time I wasn't the biggest fan of my gilled roommates but letting th
 
 ![the ssh fish feeder](/assets/img/other/ssh-fish-feeder.jpg)
 
-I wish I had more pictures to show, but alas, that and these words will have to do. On the left is my desktop hooked up to the local network via Ethernet, running Debian and an SSH service. Inside of the CD tray is tucked one seven day feeding triangle, on the end of the tray I taped a pair of magnets. A pencil is taped to the side of the desktop and to that a pen cap holding another pair of magnets taped to a string. The string runs the length of the fish tank and is tied to yet another seven day feeding triangle. It all comes together like this...
+I wish I had more pictures to show, but alas, that and these words will have to do. On the left is my desktop with internet connection via Ethernet running Debian and an SSH service. Inside of the CD tray is tucked one seven day feeding triangle, on the end of the tray I taped a pair of magnets. A pencil is taped to the side of the desktop and to that a pen cap holding another pair of magnets taped to a string. The string runs the length of the fish tank and is tied to yet another seven day feeding triangle. It all comes together like this...
 
 ## Day One
 Drop a seven day feeding triangle into the fish tank, leave campus.
