@@ -2,19 +2,14 @@
 ssh-fish-feeder
 December 17, 2012
 SSH Fish Feeder
-It was the day before Winter Break 2012 and I had no more than 30 minutes to finish packing before getting the boot from my dorm room. I had everything packed in the back of my Subaru and made my way upstairs for a final look-around, wait-- what was that? The sound of running water? Could it be that the fish tank my friends and I went in on together somehow ended up in my room? It could. it was. lame.
+It was the day before Winter Break 2012 and I had no more than 30 minutes to finish packing before getting the boot from my dorm room. I had everything packed in the back of my Subaru and made my way upstairs for a final look-around, wait-- what was that? The sound of running water?
 <!--no banner-->
 !!!
 
 
-Every couple of years I find myself wandering about the pet store to help a friend pick up dog food or something. On a few of these occasions I've stumble into the fish isle, convinced myself that pet fish are rad enough to purchase, and usually  regret the purchase before making it home. Tonight my friend I have but two pieces of information to share with you:
-
-1. pet fish are lame
-2. you can feed your lame fish over ssh
-
 It was the day before Winter Break 2012 and I had no more than 30 minutes to finish packing before getting the boot from my dorm room. I had everything packed in the back of my Subaru and made my way upstairs for a final look-around, wait-- what was that? The sound of running water? Could it be that the fish tank my friends and I went in on together somehow ended up in my room? **It could. it was. lame.**
 
-Now, by this time I wasn't the biggest fan of my gilled roommates but letting them die was not an option (the smell!) and flushing them seemed like cheating. I had to keep these fish alive for 25 days of vacation, meaning 25 days of water filtration and food. The electrical outlets in all our rooms were to be shutoff during break so my first step was to move the whole operation downstairs into the radio station. After clearing a spot on the studio couch I reinstalled the water filter and air pump but was still without a 25-day feed system.
+Now, by this time I wasn't the biggest fan of my gilled roommates but letting them die was not an option. I had to keep these fish alive for 25 days of vacation, meaning 25 days of water filtration and food. The electrical outlets in all our rooms were to be shutoff during break so my first step was to move the whole operation downstairs into the radio station. After clearing a spot on the studio couch I reinstalled the water filter and air pump but was still without a 25-day feed system.
 
 > Then it hit me, my favorite hack. I found salvation in my desktop computer, a pencil, a pen cap, string, magnets, and three seven day feeding triangles.
 
@@ -41,4 +36,4 @@ $ eject -t /mnt/cdrom
 Fish run out of food and have to rough it out for something like three days.
 
 ## Day Twenty Five
-I returned from break to find all the fish alive, for this I felt both accomplished *and* disappointed. Accomplished for the success of such a quick and dirty hack, disappointed because I still had a tank full of lame pet fish.
+I returned from break to find all the fish alive and for this I felt accomplished.
