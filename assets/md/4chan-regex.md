@@ -2,12 +2,12 @@
 4chan-regex
 January 1, 2007
 4chan Regex Practice
-Many, many years ago I decided that I needed some regex practice, and background aside I'd like to think that any survey is a survey worth sharing. What follows is a quick survey of the sex and age of 4chan commenters using exclusively shell commands. This is the bottom of the barrell my friends.
+Many, many years ago I decided that I needed some regex practice and background aside I'd like to think that any survey is a survey worth sharing. What follows is a quick tutorial on using linux shell commands to parse an A/S/L (Age/Sex/Location) thread on 4chan. This is the bottom of the barrell my friends.
 <!--no banner-->
 !!!
 
 
-**Many, many years ago** I decided that I needed some regex practice, and background aside I'd like to think that any survey is a survey worth sharing so here we go! Download an *[a/s/l](http://www.urbandictionary.com/define.php?term=asl)* thread from 4chan:
+**Many, many years ago** I decided that I needed some regex practice and background aside I'd like to think that any survey is a survey worth sharing so here we go! Download an *[a/s/l](http://www.urbandictionary.com/define.php?term=asl)* thread from 4chan:
 ```
 $ wget http://boards.4chan.org/b/res/496308962
 ```
