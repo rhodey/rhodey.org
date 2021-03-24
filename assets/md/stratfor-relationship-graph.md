@@ -2,16 +2,14 @@
 stratfor-relationship-graph
 June 28, 2012
 Stratfor Relationship Graph
-WikiLeaks began publishing [The Global Intelligence Files](http://wikileaks.org/the-gifiles.html) in 2012, over five million e-mails from the Texas headquartered "global intelligence" company Stratfor. Sometime during that summer long, long before [d3.js](https://d3js.org/) I spent a few hours paging through these emails. Wikileak's website allows you to browse by date of release or date of the document itself but this method of examination soon lost my interest, what I really wanted was a holistic understanding of the emails without having to think all that much.
+WikiLeaks began publishing [The Global Intelligence Files](http://wikileaks.org/the-gifiles.html) in 2012, over five million e-mails from the Texas headquartered "global intelligence" company Stratfor. Sometime during that summer I spent a few hours paging through these emails. Wikileak's website allows you to browse by date of release or date of the document itself but this method of examination soon lost my interest, what I really wanted was a holistic understanding of the emails without having to think all that much.
 <!--no banner-->
 !!!
 
 
-On Monday February 27th, 2012 WikiLeaks began publishing [The Global Intelligence Files](http://wikileaks.org/the-gifiles.html), over five million e-mails from the Texas headquartered "global intelligence" company Stratfor. The e-mails date between July 2004 and late December 2011 and reveal the inner workings of a company that provides confidential intelligence services to large corporations such as Dow Chemical Co, Lockheed Martin, Northrop Grumman, Raytheon and government agencies including the US Department of Homeland Security and the US Marines.
+On Monday February 27th, 2012 WikiLeaks began publishing [The Global Intelligence Files](http://wikileaks.org/the-gifiles.html), over five million e-mails from the Texas headquartered "global intelligence" company Stratfor. The e-mails date between July 2004 and late December 2011 and reveal the inner workings of a company that provides confidential intelligence services to large corporations such as Dow Chemical Co, Lockheed Martin, Northrop Grumman, Raytheon and government agencies including the US Department of Homeland Security and the US Marines. Sometime during that summer I spent a few hours paging through these emails. Wikileak's website allows you to browse by date of release or date of the document itself but this method of examination soon lost my interest, what I really wanted was a holistic understanding of the emails without having to think all that much. Pictures can be nice and simple like that, relationship graphs even better.
 
-Sometime during that summer **long, long before [d3.js](https://d3js.org/)** I spent a few hours paging through these emails. Wikileak's website allows you to browse by date of release or date of the document itself but this method of examination soon lost my interest, what I really wanted was a holistic understanding of the emails without having to think all that much. Pictures can be nice and simple like that, relationship graphs even better.
-
-I downloaded a copy of the dump to my laptop and found the raw emails sitting in a CSV file (`metadata.csv`). The ordering of the values is kindly specified at the top of the file but a few abnormalities in the formatting made it impossible to read using any software libraries I could find. At the time I was working on a machine vision project in [Ada](http://en.wikipedia.org/wiki/Ada_%28programming_language%29), there was really no other reason for my language choice. I defined a new data type for modeling the relationship between the sender and receiver of an email and then parsed these from the CSV.
+I downloaded a copy of the dump to my laptop and found the raw emails sitting in a CSV file (`metadata.csv`). At the time I was working on a machine vision project in [Ada](http://en.wikipedia.org/wiki/Ada_%28programming_language%29), there was really no other reason for my language choice. I defined a new data type for modeling the relationship between the sender and receiver of an email and then parsed these from the CSV. In [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) this relationship forms a "Directed Cyclic Graph":
 
 ```Ada
 type Email_Type is array (1 .. Email_Character_Limit) of Character;
@@ -24,29 +22,29 @@ type Relationship_Type is
   end record;
 ```
 
-In the domain of Computer Science this relationship graph is actually a "Directed Cyclic Graph", If you're not familiar with [Graph Theory](http://en.wikipedia.org/wiki/Graph_theory) now would be a great time to learn. AT&T Research has this awesome open source graph visualization software called [Graphviz](http://www.graphviz.org/), you feed it these simple *"DOT language"* files and it outputs an image of the directed graph you described. The next step was to output the relationships parsed from the CSV into a DOT language file which looks something like this:
+AT&T Research maintains an awesome open source graph visualization program called [Graphviz](http://www.graphviz.org/), you feed it *"DOT language files"* and it outputs an image of the graph you described. The syntax of a DOT language file looks like this:
 
 ```
 "burton@ stratfor.com" -> "duchin@stratfor.com"
 ```
 
-The DOT language file will contain duplicate lines in the case that `PersonA` has sent more than one email to `PersonB`. Piping the output of the linux **sort** utility to **uniq -u** took care of all duplicate lines.
+The DOT language file will contain duplicate lines in the case that `PersonA` has sent more than one email to `PersonB`. The linux **sort** and **uniq** commands can be used in combination to remove duplicates:
 
 ```
-$ sort {filename} | uniq -u > {filename}
+$ sort emails.dot | uniq -u > emails-unique.dot
 ```
 
-As a result of the alphabetical sort the DOT file's syntax became slightly corrupted. Nothing too terrible, basically the opening left brace and closing right brace need be put back in place. After that last edit the DOT file was now ready for GraphViz. GraphViz has 11 different layout engines and each will produce a different representation of the directed graph. Some are better than others depending on what kind of graph you're working with, my personal favorite for this data set is *"fdp"*.
+GraphViz supports multiple graph layout strategies, my personal favorite for this data set is *"fdp"*.
 
 > FDP layouts are spring model layouts similar to those of neato, but does this by reducing forces rather than working with energy.
 
 ```
-$ dot -Kfdp -Tpng {DOT-filename} > {PNG-filename}
+$ dot -Kfdp -Tpng emails-unique.dot > emails-unique.png
 ```
 
 ![the result](/assets/img/other/stratfor-graph.jpg)
 
-When I make the time I plan to color the edges of the graph based off of relationship strength judged by email count, attachments, and a few other things. The Ada code I whipped up for this is pretty bare-bones with no attempt to break anything out to separate packages, however it is thoroughly commented in case anyone had some new ideas of their own.
+When I make the time I plan to color the edges of the graph based off of relationship strength judged by email count, attachments, and a few other things. The Ada code I whipped up for this is pretty bare-bones with no attempt to break anything out to separate packages.
 
 
 ```ada
