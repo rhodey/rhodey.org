@@ -300,7 +300,7 @@ server {
 ```
 
 ## Deploying to Production
-For larger, more serious projects like [RadioWitness.io](https://radiowitness.io/) I almost always deploy to Amazon Web Services using [Amazon OpsWorks](https://aws.amazon.com/opsworks/), but small stuff like this goes on my [Linode](https://linode.com/). Server-side I have this script named `pull-rhodey.org` which is owned by the user `nginx`:
+Nowadays I deploy everything using Docker but I've decided to keep these old bash scripts published online as interesting bash references. Server-side I had this script named `pull-rhodey.org` which was owned by the user `nginx`:
 
 ```bash
 #!/bin/bash
@@ -319,7 +319,7 @@ do
 done
 ```
 
-Then client-side on my laptop I've got the following script `deploy-rhodey.org`:
+Then client-side on my laptop I had the following script `deploy-rhodey.org`:
 
 ```bash
 #!/bin/bash
@@ -328,7 +328,7 @@ sudo service nginx reload"
 ssh -t rhodey.org "$CMD"
 ```
 
-Of course this script is setup in my `$PATH` so deploying to production is as easy as:
+This script was setup in my `$PATH` so deploying to production used to be:
 
 ```bash
 $ git checkout production
@@ -338,4 +338,4 @@ $ deploy-rhodey.org
 ```
 
 ## That's it!
-I started building this blog [four days ago](https://github.com/rhodey/react.rhodey.org/commit/a4361a069166a75d869ff0988cebb7f358b4a78f) and spent a good portion of that time restoring old blog posts and writing new content. All in all at the time of this writing the repo totals `348` lines of JavaScript and `124` lines of CSS, if I wasn't such an indentation & spacing freak it'd probably be significantly less. After filling this blog in with some more writing I think my next move will be to migrate to [Bootstrap 4](https://v4-alpha.getbootstrap.com/) for the sake of experience. So far I'm very satisfied with my new blogging platform, already I've written a lot more content than last time around, hope to keep it up!
+It took me four days [from start](https://github.com/rhodey/react.rhodey.org/commit/a4361a069166a75d869ff0988cebb7f358b4a78f) to get this blog iteration online and I spent a good portion of that time restoring old blog posts and writing new content. All in all at the time of this writing the repo totals `348` lines of JavaScript and `124` lines of CSS, if I wasn't such an indentation & spacing freak it'd probably be significantly less. After filling this blog in with some more writing I think my next move will be to migrate to [Bootstrap 4](https://v4-alpha.getbootstrap.com/) for the sake of experience. So far I'm very satisfied with my new blogging platform, already I've written a lot more content than last time around, hope to keep it up!
