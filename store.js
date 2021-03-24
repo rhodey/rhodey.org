@@ -16,7 +16,7 @@ function store (state, emitter) {
     emitter.on('fetch', function(key) {
       if (state.fetching || state.fetch[key]) { return }
       state.fetching = true
-      fetch(`/assets/md/${key}.md#${Date.now()}`)
+      fetch(`/assets/md/${key}.md?${Date.now()}`)
         .then((res) => res.text())
         .then((txt) => {
           state.fetch[key] = txt
