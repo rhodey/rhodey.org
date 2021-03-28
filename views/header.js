@@ -19,6 +19,7 @@ module.exports = class Header extends Component {
             <a href="mailto:mike@rhodey.org"> email</a>
             <a href="https://github.com/rhodey"> software</a>
             <a href="https://rhodeyorbits.bandcamp.com"> music</a>
+            <a href="https://www.youtube.com/channel/UC_UKaZIS54H0yy_Od3cnyKw"> video</a>
           </span>
         </h1>
         <div className="headerBorder"/>
