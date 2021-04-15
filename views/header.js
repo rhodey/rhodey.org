@@ -14,7 +14,7 @@ module.exports = class Header extends Component {
   createElement () {
     return html`
       <div className="header">
-        <h1><a href="/">#rhodey.org</a>
+        <h1><a href="/">rhodey.org</a>
           <span className="headerLinks">
             <a href="mailto:mike@rhodey.org"> email</a>
             <a href="https://github.com/rhodey"> software</a>
