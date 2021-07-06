@@ -2,7 +2,7 @@
 twitter-squat
 June 5, 2014
 Fighting Twitter Squatters
-At the time of writing this some bot is squatting [@rhodey](http://twitter.com/rhodey) on Twitter and has been for some time. I don't remember to check the availability of this handle very frequently and would hate to have it open up only to be squatted again so I put together this simple bash script.
+At the time of writing this some bot is squatting @rhodey on Twitter and has been for some time. I don't remember to check the availability of this handle very frequently and would hate to have it open up only to be squatted again so I put together this simple bash script.
 <!--no banner-->
 !!!
 

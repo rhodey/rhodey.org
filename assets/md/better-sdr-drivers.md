@@ -2,7 +2,7 @@
 better-sdr-drivers
 August 6, 2019
 Better Software Defined Radio Drivers
-It seems that every couple months now a new [Software Defined Radio (SDR)](https://en.wikipedia.org/wiki/Software-defined_radio) is announced. The real cost of an SDR includes not only the dollar amount but a time commitment to refactoring the new hardware driver into your codebase. We can do better than this, using `stdin, stdout, & stderr` we can create language-agnostic drivers that save us time and complexity.
+It seems that every couple months now a new Software Defined Radio (SDR) is announced. The real cost of an SDR includes not only the dollar amount but a time commitment to refactoring the new hardware driver into your codebase. We can do better than this, using `stdin, stdout, & stderr` we can create language-agnostic drivers that save us time and complexity.
 <!--no banner-->
 !!!
 
