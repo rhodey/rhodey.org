@@ -77,6 +77,7 @@ function view (state, emit) {
 
   return html`
     <body class="app">
+      <link rel="icon" href="assets/favicon.png" />
       ${state.cache(Header, 'header').render()}
       <div class="blogListBox">
         ${items}
