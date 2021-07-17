@@ -9,7 +9,7 @@ It was the day before Winter Break 2012 and I had no more than 30 minutes to fin
 
 It was the day before Winter Break 2012 and I had no more than 30 minutes to finish packing before getting the boot from my dorm room. I had everything packed in the back of my Subaru and made my way upstairs for a final look-around, wait-- what was that? The sound of running water? Could it be that the fish tank my friends and I went in on together somehow ended up in my room? **It could. it was. lame.**
 
-Now, by this time I wasn't the biggest fan of my gilled roommates but letting them die was not an option. I had to keep these fish alive for 25 days of vacation, meaning 25 days of water filtration and food. The electrical outlets in all our rooms were to be shutoff during break so my first step was to move the whole operation downstairs into the radio station. After clearing a spot on the studio couch I reinstalled the water filter and air pump but was still without a 25-day feed system.
+Now, by this time I wasn't the biggest fan of my gilled roommates but letting them die was not an option. I had to keep these fish alive for 25 days of vacation, meaning 25 days of water filtration and food. The electrical outlets in all our rooms were to be shutoff during break so my first step was to move the whole operation downstairs into [the radio station](http://wvtc.net). After clearing a spot on the studio couch I reinstalled the water filter and air pump but was still without a 25-day feed system.
 
 > Then it hit me, my favorite hack. I found salvation in my desktop computer, a pencil, a pen cap, string, magnets, and three seven day feeding triangles.
 
