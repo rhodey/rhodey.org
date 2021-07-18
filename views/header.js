@@ -18,7 +18,7 @@ module.exports = class Header extends Component {
           <span className="headerLinks">
             <a href="mailto:mike@rhodey.org"> email</a>
             <a href="https://github.com/rhodey"> software</a>
-            <a href="https://rhodeyorbits.bandcamp.com"> audio</a>
+            <a href="https://rhodeyorbits.bandcamp.com"> music</a>
             <a href="https://www.instagram.com/notrhodey"> photo</a>
             <a href="https://www.youtube.com/channel/UC_UKaZIS54H0yy_Od3cnyKw"> video</a>
           </span>
