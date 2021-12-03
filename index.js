@@ -1,21 +1,42 @@
-var css = require('sheetify')
-var choo = require('choo')
+let choo = require('choo')
+let app = choo()
 
-css('./assets/style.css')
-css('./assets/bootstrap-3.3.6.css')
-css('./assets/highlightjs-9.6.0.css')
-
-var app = choo()
 if (process.env.NODE_ENV !== 'production') {
   app.use(require('choo-devtools')())
-} else {
-  app.use(require('choo-service-worker')())
 }
 
-app.use(require('./store'))
+function store (state, emitter) {
+  state.fetch = { }
+  state.fetching = false
+  state.emoticounter = 0
 
-app.route('/', require('./views/main'))
-app.route('/blog/:entry', require('./views/entry'))
-app.route('/*', require('./views/404'))
+  emitter.on('DOMContentLoaded', function () {
+    setInterval(() => emitter.emit('emoticon:next'), 800)
 
-module.exports = app.mount('body')
+    emitter.on('emoticon:next', function () {
+      state.emoticounter += 1
+      emitter.emit(state.events.RENDER)
+    })
+
+    emitter.on('fetch', function(key) {
+      if (state.fetching || state.fetch[key]) { return }
+      state.fetching = true
+
+      fetch(`/assets/md/${key}.md?${Date.now()}`)
+        .then((res) => res.text())
+        .then((txt) => {
+          state.fetch[key] = txt
+          state.fetching = false
+          emitter.emit(state.events.RENDER)
+        }).catch(console.error)
+    })
+  })
+}
+
+app.use(store)
+
+app.route('/', require('./lib/home.js'))
+app.route('/blog/:path', require('./lib/entry.js'))
+app.route('/*', require('./lib/404.js'))
+
+module.exports = app.mount('.app')
