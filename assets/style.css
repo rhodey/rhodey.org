@@ -17,7 +17,7 @@ p, li {
 }
 
 .app {
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
   padding: 12px 12px 28px 12px;
 }
@@ -60,7 +60,7 @@ p, li {
 }
 
 .blogListItemLeft .date {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .blogListItemLeft .emoticon {
