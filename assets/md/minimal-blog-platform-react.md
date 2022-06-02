@@ -17,7 +17,7 @@ Everyone does blogging differently, this site is my second shot at coding myself
 + [Highlight.js](https://highlightjs.org) Syntax Highlighting
 
 ## Static Assets
-First off browse over to the [GitHub repo](https://github.com/rhodey/react.rhodey.org/tree/ed7b1af8feab645622639cf6bae76157686c9c88) for this site, all of the code **and** content is hosted in this repo. The full text of every blog entry can be found in the [md/](https://github.com/rhodey/react.rhodey.org/blob/ed7b1af8feab645622639cf6bae76157686c9c88/js/gen-blog-index.js) directory and if you view the *"raw"* Markdown source you'll see that the first six lines of every file are a header, the form of which is:
+First off browse over to the [GitHub repo](https://github.com/rhodey/react.rhodey.org/tree/ed7b1af8feab645622639cf6bae76157686c9c88) for this site, all of the code **and** content is hosted in this repo. The full text of every blog entry can be found in the [md/](https://github.com/rhodey/react.rhodey.org/blob/ed7b1af8feab645622639cf6bae76157686c9c88/md) directory and if you view the *"raw"* Markdown source you'll see that the first six lines of every file are a header, the form of which is:
 
 ```
 !!!
@@ -112,7 +112,7 @@ var App = React.createClass({
 ```
 
 ### Header
-My `Header` class is defined in [js/header.js](https://github.com/rhodey/react.rhodey.org/blob/ed7b1af8feab645622639cf6bae76157686c9c88/js/header.js) and is mostly there to link you back to the homepage, my GitHub, my email address, and [The Radio Witness Project](https://radiowitness.io/). But `Header` also uses one awesome new tool I picked up while building this site, [React Helmet](https://github.com/nfl/react-helmet):
+My `Header` class is defined in [js/header.js](https://github.com/rhodey/react.rhodey.org/blob/ed7b1af8feab645622639cf6bae76157686c9c88/js/header.js) and is mostly there to link you back to the homepage, my GitHub, my email address, and [The Radio Witness Project](https://radiowitness.org/). But `Header` also uses one awesome new tool I picked up while building this site, [React Helmet](https://github.com/nfl/react-helmet):
 
 > This reusable React component will manage all of your changes to the document head with support for document title, meta, link, script, and base tags. Inspired by react-document-title
 
