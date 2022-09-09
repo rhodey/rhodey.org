@@ -37,6 +37,7 @@ app.use(store)
 
 app.route('/', require('./lib/home.js'))
 app.route('/blog/:path', require('./lib/entry.js'))
+app.route('/privacy', require('./lib/privacy.js'))
 app.route('/*', require('./lib/404.js'))
 
 module.exports = app.mount('.app')
