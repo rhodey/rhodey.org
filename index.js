@@ -40,4 +40,10 @@ app.route('/blog/:path', require('./lib/entry.js'))
 app.route('/privacy', require('./lib/privacy.js'))
 app.route('/*', require('./lib/404.js'))
 
+// redirect from old path to new.
+app.route('/blog/ai-ching-rejected-by-apple', function (state, emit) {
+  emit(state.events.REPLACESTATE, '/blog/introducing-the-ai-ching')
+  return require('./lib/entry.js')(state, emit)
+})
+
 module.exports = app.mount('.app')
