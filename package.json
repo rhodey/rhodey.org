@@ -1,17 +1,21 @@
 {
-  "name": "choo.rhodey.org",
-  "version": "1.1.0",
+  "name": "rhodey.org",
+  "version": "1.2.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
-    "index-for-blog": "node lib/gen-blog-index.js && mv blog-index.js lib/",
-    "dist": "npm run index-for-blog && mkdir -p dist/ && browserify index.js -o dist/bundle.js && cp -r index.html assets/ dist/"
+    "list": "node src/gen-list.js",
+    "build": "npm run list && browserify src/index.js -o dist/bundle.js && cp -r index.html assets/ dist/",
+    "dev": "npm run list && bhr src/index.js index.html assets/ -o dist/bundle.js"
   },
   "dependencies": {
-    "choo": "^6.13.3",
+    "choo": "^7.1.0",
     "marked": "0.3.6",
     "highlight.js": "9.6.0"
   },
   "devDependencies": {
-    "choo-devtools": "^3.0.0"
+    "choo-devtools": "^3.0.4",
+    "browserify": "^17.0.0",
+    "browserify-hot-reload": "^1.1.1"
   }
 }

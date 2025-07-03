@@ -1,11 +1,4 @@
-lib/blog-index.js
 dist/
-
-package-lock.json
+src/list.js
 node_modules/
-.nyc_output/
-coverage/
-
-npm-debug.log*
-.DS_Store
 *\.swp

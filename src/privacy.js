@@ -1,11 +1,9 @@
-var html = require('choo/html')
+const html = require('choo/html')
 
-var TITLE = 'Privacy Policy'
+const title = 'Privacy Policy'
 
-module.exports = view
-
-function view (state, emit) {
-  if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
+module.exports = function privacy(state, emit) {
+  (state.title !== title) && emit('DOMTitleChange', title)
   return html`
     <div class="app sans-serif pa3">
       <h1>Privacy</h1>

@@ -1,17 +1,16 @@
-let html = require('choo/html')
-let Component = require('choo/component')
+const html = require('choo/html')
+const Component = require('choo/component')
 
 module.exports = class Header extends Component {
-  constructor (id, state, emit) {
+  constructor(id, state, emit) {
     super(id)
-    this.local = state.components[id] = { }
   }
 
-  update () {
+  update() {
     return false
   }
 
-  createElement () {
+  createElement() {
     return html`
       <div className="header">
         <h1><a href="/">rhodey.org</a>
