@@ -1,7 +1,7 @@
 !!!
 minimal-blog-platform-react
 September 19, 2016
-Building A Minimal Blogging Platform with React.js
+Building A Minimal Blogging Platform with React
 Everyone does blogging differently, this site is my second shot at coding myself a blogging platform (update: did it again, this time using choo.js). This was largely an exercise in getting more familiar with React.
 <!--no banner-->
 !!!
