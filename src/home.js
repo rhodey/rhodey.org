@@ -5,13 +5,12 @@ const Component = require('choo/component')
 const Header = require('./header.js')
 
 const LIST = require('./list.js')
+
 const WAVES = [
-  ",//( ,//(,",
-  ",//( ,//(, ,//(,",
-  ",)\\\\, ,)\\\\, ,)\\\\,",
-  ",)\\\\, ,)\\\\,",
-  ",)\\\\,",
-  ",//(",
+  "🌊🌊",
+  "🌊🌊🌊",
+  "🌊🌊",
+  "🌊",
 ]
 
 class BlogListItem extends Component {
@@ -72,7 +71,7 @@ module.exports = function home(state, emit) {
   const rows = Object.keys(LIST).map(
       (path, idx) =>
          state.cache(BlogListItem, 'item' + idx)
-              .render(path, state.counter - 1 - idx)
+              .render(path, state.counter + idx)
   )
 
   return html`
