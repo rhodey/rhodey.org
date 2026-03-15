@@ -16,7 +16,7 @@ Bizcardz.ai is free to use. The end result is a ZIP file with your card as a KiC
 
 The models used are gemini-2.0-flash-lite, gemini-2.5-flash-lite, and ideogram-v2a-turbo. As with all things I write here [sources are on GitHub](https://github.com/rhodey/bizcardz.ai). Check out [FAQ](https://bizcardz.ai/faq) page for more pictures. 
 
-<img src="https://bizcardz.ai/assets/img/faq-all.jpg" height="300">
+<img src="/assets/img/other/cardz.jpg" height="300">
 
 ## Hecate.video
 [Hecate.video](https://hecate.video/) started when I found a blogpost by [Tinfoil.sh](https://tinfoil.sh/blog) explaining their AI inference infra. Tinfoil uses [Trusted execution environments](https://en.wikipedia.org/wiki/Trusted_execution_environment) AKA "TEEs" which I became familiar with around 2015 while at Signal. Signal was the first real user of Intel SGX. Years later I have started working with AWS Nitro TEEs to make [Lock.host](https://lock.host/) which I will write more about another time.
