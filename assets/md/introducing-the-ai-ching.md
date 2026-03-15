@@ -28,4 +28,4 @@ Here is a link to the [FREE PDF](https://rhodey.org/assets/ai-ching.pdf).
 Here is a link to the [FREE React Native project](https://github.com/rhodey/AI-Ching-Mobile).
 
 ## Google Play
-Here ia a link to the [$7 Google Play Store download](https://play.google.com/store/apps/details?id=com.aiching).
+Here is a link to the [$7 Google Play Store download](https://play.google.com/store/apps/details?id=com.aiching).

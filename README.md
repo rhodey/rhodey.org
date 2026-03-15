@@ -27,6 +27,6 @@ npm run dev
 ```
 
 ## License
-Copyright 2025 - mike@rhodey.org
+Copyright 2026 - mike@rhodey.org
 
 MIT

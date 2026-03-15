@@ -99,7 +99,6 @@ p, li {
 .blogEntryBox { }
 
 .blogEntry img {
-  display: block;
   max-width: 100%;
   max-height: 100%;
 }
