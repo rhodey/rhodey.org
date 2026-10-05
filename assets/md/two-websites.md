@@ -14,7 +14,9 @@ Its been awhile since I had an update here. I've been busy with more than a few 
 
 Bizcardz.ai is free to use. The end result is a ZIP file with your card as a KiCad design. The ZIP contains README to guide through the process of sending to [Elecrow](https://www.elecrow.com/) to be manufactured. You can expect to pay about $1 per pcb in quantities of 50 and $0.80 in quantities of 100.
 
-The models used are gemini-2.0-flash-lite, gemini-2.5-flash-lite, and ideogram-v2a-turbo. As with all things I write here [sources are on GitHub](https://github.com/rhodey/bizcardz.ai). Check out [FAQ](https://bizcardz.ai/faq) page for more pictures. 
+~~The models used are gemini-2.0-flash-lite, gemini-2.5-flash-lite, and ideogram-v2a-turbo. As with all things I write here [sources are on GitHub](https://github.com/rhodey/bizcardz.ai). Check out [FAQ](https://bizcardz.ai/faq) page for more pictures.~~
+
+Update: I took the source code offline because I'm working on a v2 which uses laser etching instead of a PCB company, it is now one of a few things I've chosen to keep to myself as it looks more and more likely that AI will take a lot of jobs.
 
 <img src="/assets/img/other/cardz.jpg" height="300">
 
