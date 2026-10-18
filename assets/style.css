@@ -37,7 +37,7 @@ p, li {
   font-size: 20px;
   font-weight: bold;
   word-spacing: 10px;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
 }
 
 .headerLinksOut a:hover {
