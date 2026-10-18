@@ -44,7 +44,7 @@ class BlogListItem extends Component {
                 ${metadata.date}
               </span>
               <span class="emoticon row">
-                ${WAVES[counter % WAVES.length]}
+                ${WAVES[Math.abs(counter) % WAVES.length]}
               </span>
             </p></div>
           </div>

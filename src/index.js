@@ -10,7 +10,7 @@ function store(state, emitter) {
     setInterval(() => emitter.emit('animate'), 800)
 
     emitter.on('animate', () => {
-      state.counter += 1
+      state.counter -= 1
       emitter.emit('render')
     })
 
