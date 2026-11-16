@@ -32,6 +32,8 @@ I don't want to be rude but IPFS is in trouble maintenance-wise but nonetheless 
 
 I've got [Lock.host](https://lock.host/) ready to push state-of-the-art on these multiple fronts for the right investors. 2 of 3 are `MIT` but MonsterFt is `AGPL-3.0-only` to commercialize licensing. If you've got a strong/cool team already and want me to join-up HMU also!
 
+**The work may be changing but I want to stay in the game.**
+
 **Aim for the stars,**
 
 **mike@rhodey.org**
