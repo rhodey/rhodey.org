@@ -2,21 +2,21 @@
 two-websites
 March 15, 2026
 Two Websites
-Its been awhile since I had an update here. I've been busy with more than a few things and I will share two now. Last year I published [bizcardz.ai](https://bizcardz.ai/) and just yesterday I published [hecate.video](https://hecate.video/). Bizcardz.ai does custom PCB business cards and Hecate is a VR AI chatbot that lives inside Signal voice and video calls.
+Its been awhile since I had an update here. I've been busy with more than a few things and I will share two now. Last year I published bizcardz.ai and just yesterday I published [hecate.video](https://hecate.video/). Bizcardz.ai does custom PCB business cards and Hecate is a VR AI chatbot that lives inside Signal voice and video calls.
 <!--no banner-->
 !!!
 
 
-Its been awhile since I had an update here. I've been busy with more than a few things and I will share two now. Last year I published [bizcardz.ai](https://bizcardz.ai/) and just yesterday I published [hecate.video](https://hecate.video/). Bizcardz.ai does custom PCB business cards and Hecate is a VR AI chatbot that lives inside Signal voice and video calls.
+Its been awhile since I had an update here. I've been busy with more than a few things and I will share two now. Last year I published bizcardz.ai and just yesterday I published [hecate.video](https://hecate.video/). Bizcardz.ai does custom PCB business cards and Hecate is a VR AI chatbot that lives inside Signal voice and video calls.
 
 ## Bizcardz.ai
-[Bizcardz.ai](https://bizcardz.ai/) started when I spent a lot of time learning [KiCad](https://www.kicad.org/) to try to manufacture an electronic. That electronic did not make it to the finish line and I wanted to recover some of my time so I thought what could be done with KiCad. Circuit boards are something where its expensive to make 1 but cheap to make 100. Also circuit boars need to be small. Those 2 constraints together => business cards.
+Bizcardz.ai started when I spent a lot of time learning [KiCad](https://www.kicad.org/) to try to manufacture an electronic. That electronic did not make it to the finish line and I wanted to recover some of my time so I thought what could be done with KiCad. Circuit boards are something where its expensive to make 1 but cheap to make 100. Also circuit boars need to be small. Those 2 constraints together => business cards.
 
 Bizcardz.ai is free to use. The end result is a ZIP file with your card as a KiCad design. The ZIP contains README to guide through the process of sending to [Elecrow](https://www.elecrow.com/) to be manufactured. You can expect to pay about $1 per pcb in quantities of 50 and $0.80 in quantities of 100.
 
 ~~The models used are gemini-2.0-flash-lite, gemini-2.5-flash-lite, and ideogram-v2a-turbo. As with all things I write here [sources are on GitHub](https://github.com/rhodey/bizcardz.ai). Check out [FAQ](https://bizcardz.ai/faq) page for more pictures.~~
 
-Update: I took the source code offline because I'm working on a v2 which uses laser etching instead of a PCB company, it is now one of a few things I've chosen to keep to myself as it looks more and more likely that AI will take a lot of jobs.
+Update: I took the sources offline. I bought a 60W MOPA Fiber Laser and I'm planning to make this a small business hedge against AI maybe taking away digital-only work.
 
 <img src="/assets/img/other/cardz.jpg" height="300">
 
