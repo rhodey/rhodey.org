@@ -18,6 +18,7 @@ p, li {
 
 .app {
   width: 750px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 12px 12px 28px 12px;
 }
@@ -101,4 +102,73 @@ p, li {
 .blogEntry img {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width: 767px) {
+  .app {
+    padding: 12px 16px 28px;
+  }
+
+  p, li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .headerLinksOut {
+    display: block;
+    line-height: 1;
+  }
+
+  .headerLinksOut a {
+    display: inline-block;
+    line-height: 1.8;
+  }
+
+  .blogListItem {
+    margin-bottom: 24px;
+  }
+
+  .blogListItemLeft {
+    padding-top: 0;
+  }
+
+  .blogListItemLeft p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 12px;
+    margin-bottom: 4px;
+  }
+
+  .blogListItemRight .row {
+    margin: 0;
+  }
+
+  .blogListItemRight .title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .blogListItemRight, .blogEntry {
+    overflow-wrap: anywhere;
+  }
+
+  .blogEntry h1 {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  .blogEntry h2 {
+    font-size: 22px;
+  }
+
+  .blogEntry h3 {
+    font-size: 20px;
+  }
+
+  .blogEntry pre {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }

@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "list": "node src/gen-list.js",
-    "build": "npm run list && browserify src/index.js -o dist/bundle.js && cp -r index.html assets/ dist/",
+    "build": "npm run list && browserify src/index.js -o dist/bundle.js && cp -r index.html assets dist/",
     "dev": "npm run list && bhr src/index.js index.html assets/ -o dist/bundle.js"
   },
   "dependencies": {

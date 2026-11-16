@@ -38,7 +38,7 @@ class BlogListItem extends Component {
     return html`
       <div class="blogListItem">
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-4">
             <div class="blogListItemLeft"><p>
               <span class="date row">
                 ${metadata.date}
@@ -48,7 +48,7 @@ class BlogListItem extends Component {
               </span>
             </p></div>
           </div>
-          <div class="col-xs-8">
+          <div class="col-xs-12 col-sm-8">
             <div class="blogListItemRight">
               <div class="title row">
                 <a href=${path}>${metadata.title}</a>
